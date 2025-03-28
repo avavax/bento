@@ -23,6 +23,22 @@
             order: -1;
         }
     }
+    .footer {
+        &__btn {
+            margin-left: auto;
+            margin-top: 20px;
+        }
+        &__bottom {
+            justify-content: space-between;
+        }
+        &__logo {
+            flex-basis: 100%;
+            text-align: center;
+        }
+        &__btn {
+            margin-right: auto;
+        }
+    }
 }
 
 @media (max-width: 560px) {
@@ -38,5 +54,17 @@
     .btn {
         padding: 18px 50px;
         font-size: 18px;
+    }
+    .footer {
+        &__logo img {
+            width: 250px;
+        }
+        &__contacts-item {
+            flex-basis: 100%;
+            margin-bottom: 30px;
+        }
+        &__inner {
+            padding: 30px 15px 22px;
+        }
     }
 }

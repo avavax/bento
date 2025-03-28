@@ -82,4 +82,40 @@ body {
     }
 }
 
+.footer {
+    margin-bottom: 100px;
+    &__inner {
+        border-radius: 30px;
+        background-color: #8F7E70;
+        padding: 50px 50px 22px;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__contacts {
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    &__contacts-item {
+        flex-basis: 50%;
+        align-self: start;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 36px;
+        flex-wrap: wrap; 
+    }
+    &__logo {
+        flex-basis: 50%;
+    }
+}
+
 @import 'media';
