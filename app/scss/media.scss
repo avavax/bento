@@ -6,6 +6,8 @@
     }
     .top {
         &__inner {
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
             grid-template-rows: 220px 390px;
         }
         &__title {
