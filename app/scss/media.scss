@@ -41,6 +41,35 @@
             margin-bottom: 20px;
         }
     }
+    .projects {
+        &__inner {
+            padding-right: 40px;
+        }
+        &__slider {
+            padding-bottom: 20px;
+        }
+        &__slide-images {
+            width: 48%;
+            object-fit: contain;
+        }
+        &__slider-btn {
+            background-color: #3C342E;
+            width: 44px;
+            height: 30px;
+            bottom: 40px;
+        }
+        .swiper-button-next {
+            right: 2px;
+        }
+        .swiper-button-prev {
+            right: 375px;
+        }        
+    }
+    .tariffs {
+        &__list li {
+            margin-left: 40px;
+        }
+    }
 }
 
 @media (max-width: 1020px) {
@@ -68,6 +97,72 @@
             padding-top: 108px;
         }                                
     }
+    .about {
+        &__wrapper {
+            padding-bottom: 50px;
+            &::after {
+                display: none;
+            }
+        }
+        &__inner {
+            padding-bottom: 50px;
+            border-radius: 30px;
+        }
+    }
+    .projects {
+        margin-top: 0;
+        &__inner {
+            background-image: none;
+            background-color: #8F7E70;
+            border-radius: 30px;
+            padding: 50px 50px 20px;            
+        }
+        &__slider {
+            margin-top: 0;
+        }
+        &__slide-title {
+            margin-bottom: 30px;
+        }
+        &__slide-inner {
+            flex-wrap: wrap;
+        }
+        &__slide-images {
+            order: -1;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__slide-subtitle {
+            max-width: 100%;
+        }
+        &__slide-text {
+            max-width: 100%;
+            height: 140px;
+        }
+        &__slide-info {
+            justify-content: right;
+        }
+        &__slider-btn {
+            bottom: 358px;
+            width: 60px;
+        }
+        .swiper-button-next {
+            right: 60px;
+        }
+        .swiper-button-prev {
+            right: 520px;
+        }        
+    }
+    .tariffs {
+        &__inner {
+            display: block;
+        }
+        &__content-left {
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
 }
 
 @media (max-width: 920px) {
@@ -76,7 +171,6 @@
             justify-content: flex-end;
         }
         &__btn {
-            /*margin: 20px 0 0 150px;*/
             margin: 20px auto 0 auto;
         }
         &__logo {
@@ -167,6 +261,65 @@
             flex-basis: 100%;
         }
     }
+    .about {
+        &__inner {
+            padding: 50px 20px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .projects {
+        margin-bottom: 50px;
+        &__inner {
+            padding: 50px 20px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__slider {
+            padding-bottom: 0;
+        }
+        &__slide-title {
+            font-size: 30px;
+            margin-right: auto;
+        }
+        &__slide-images {
+            width: 100%;
+        }
+        &__slide-text {
+            height: 220px;
+        }
+        &__slide-info {
+            justify-content: space-between;
+            gap: 2px;
+            li {
+                font-size: 16px;
+                width: 110px;
+                &:last-child {
+                    background-size: contain;
+                }
+            }
+        }
+        &__slider-btn {
+            bottom: 386px;
+        }
+        .swiper-button-next {
+            right: 40px;
+        }
+        .swiper-button-prev {
+            right: 245px;
+        }            
+    }
+    .tariffs {
+        &__title {
+            line-height: 80px;
+        }
+        &__btn {
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }
 }
 
 
@@ -193,6 +346,12 @@
             padding: 30px 15px 22px;
         }
     }
+    .tariffs {
+        &__btn {
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }    
 }
 
 @media (max-width: 420px) {
@@ -200,5 +359,8 @@
         &__about:after {
             display: none;
         }
+    }
+    .projects__slider-btn {
+        display: none;
     }
 }
