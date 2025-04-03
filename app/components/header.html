@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Дизайнерское агентство</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/home.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,9 +19,30 @@
                 <img src="images/logo.svg" alt="logo">
             </a>
             <button class="header__btn btn">Получить консультацию</button>
-            <button class="header__menu">
-                <img src="images/btn-menu.svg" alt="menu">
+            <button class="header__menu-btn">
+                <img class="header__menu-open" src="images/btn-menu.svg" alt="menu">
+                <img class="header__menu-close hidden" src="images/btn-menu-close.svg" alt="menu">
             </button>
+        </div>
+        <div class="header__menu header__menu-hidden">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#about">О нас</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#projects">Проекты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#tariffs">Тарифы</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#gallery">Галерея</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#contacts">Контакты</a>
+                </li>
+
+            </ul>
         </div>
     </div>
   </header>

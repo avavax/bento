@@ -19,6 +19,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -82,18 +83,55 @@ sup {
     border-radius: 30px;
 }
 
+.hidden {
+    display: none;
+}
+
 .header {
     padding-top: 50px;
     margin-bottom: 50px;
+    position: relative;
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
+    &__menu-btn {
+        z-index: 11;
+        width: 62px;
+        text-align: center;
+    }
     &__btn {
         margin-left: auto;
         margin-right: 160px;
+    }
+    &__menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #3C342E;
+        opacity: 95%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 200px;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+    &__menu-hidden {
+        left: -100%;
+    }
+    &__menu-item {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
     }
 }
 

@@ -3,6 +3,9 @@
         &__btn {
             margin-right: auto;
         }
+        &__menu {
+            padding-left: 150px;
+        }
     }
     .top {
         &__inner {
@@ -227,9 +230,12 @@
             order: -1;
             margin-right: auto;
         }
-        &__menu {
+        &__menu-btn {
             order: -1;
         }
+        &__menu {
+            padding-left: 120px;
+        }        
     }
     .footer {
         &__btn {
@@ -398,6 +404,13 @@
             margin-left: auto;
             margin-right: auto;
         }
+        &__menu {
+            padding-left: 80px;
+
+        }
+        &__menu-item {
+            font-size: 30px;
+        }          
     }
     .btn {
         padding: 18px 50px;
